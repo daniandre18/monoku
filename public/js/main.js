@@ -1,4 +1,29 @@
 
+
+$(document).ready(function(){
+    
+    $("form").submit(function() {
+        var data = $('#filtro').serialize();
+        console.log("data", data);
+
+    $.ajax({
+        url: document.URL+"filtrarExcel",
+        type: "POST",
+        dataType: "text/html",
+        data: data,
+        success: function (responseJson) {
+            console.log("responseJson", responseJson);
+        },
+        error: function (xhr, status) {
+            console.log("error filter");
+        },
+           
+    })
+
+    });
+});
+
+
 function leerExcel(start, end) {
     var startData = (start) ? start : 0 ;
     var endData = (end)? end : 10 ;
@@ -33,7 +58,4 @@ function leerExcel(start, end) {
     })
 }
 
-$("#filtro").submit(function( event ) {
-    var data = $('#filtro').serialize();
-    console.log("data", data);
-});
+
