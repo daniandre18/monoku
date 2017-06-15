@@ -1,0 +1,33 @@
+ .tetris{
+     border-collapse: collapse;
+}
+.tetris tr td{
+     width:20px;
+     height:20px;
+     padding: 0px;
+}
+.celda0{
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+}
+.celda1{
+     background-color: #78909C;
+}
+.celda2{
+     background-color: #37474F;
+}
+.celda3{
+     background-color: #d838cb;
+}
+.celda4{
+     background-color: #FFFF00;
+}
+.celda5{
+     background-color: #546E7A;
+}
+.celda6{
+     background-color: #FF00FF;
+}
+.celda7{
+     background-color: #263238;
+}
