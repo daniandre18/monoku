@@ -16,7 +16,7 @@ app.get("/leerExcel",function(req,res){
 
 app.post("/filtrarExcel",function(req,res){
 	var dir = req.body;
-	response = filtrar(req.body);
+	response = filtrar(dir);
 	res.json(response);
 });
 
